@@ -37,7 +37,7 @@ export default function Glossary () {
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="30">
-                <Accordion.Header>Effort vs cash flow</Accordion.Header>
+                <Accordion.Header>Effort et cash flow</Accordion.Header>
                 <Accordion.Body>
                     Lorsqu'un investissement immobilier génère un cash flow négatif, cela signifie que les revenus locatifs ne suffisent pas à couvrir
                     les dépenses totales (prêt, taxes, charges, etc.). Pour compenser cette différence, l'investisseur doit apporter de sa poche une somme supplémentaire chaque mois :
