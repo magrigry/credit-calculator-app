@@ -1,7 +1,7 @@
 import {Alert, Card, Col, Row} from "react-bootstrap";
 import i18n from "i18next";
 import {nFormatter} from "../utils/Numbers.js";
-import {InvestTypes} from "../enums/InvestTypes.js";
+import {InvestTypes} from "../InvestTypes.js";
 
 export default function Resume({calculator}) {
     return <>

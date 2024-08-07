@@ -1,6 +1,6 @@
 import Form from "react-bootstrap/Form";
 import {useState} from "react";
-import {InvestTypes} from "../enums/InvestTypes.js";
+import {InvestTypes} from "../InvestTypes.js";
 import i18n from "i18next";
 
 export default function InvestForm({calculator, setCalculator}) {

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import CreditForm from "./components/CreditForm.jsx";
 import InvestForm from "./components/InvestForm.jsx";
 import {Card, Col, Container, Row} from "react-bootstrap";
-import {InvestTypes} from "./enums/InvestTypes.js";
+import {InvestTypes} from "./InvestTypes.js";
 import ResultChart from "./components/ResultChart.jsx";
 import Theme from "./components/Theme.jsx";
 import i18n from "i18next";
