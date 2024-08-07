@@ -73,10 +73,12 @@ function App() {
 
           <hr className="m-5"/>
 
-          <Container className={"m-5"}>
-              <h2>{i18n.t('title.glossary')}</h2>
-              <Glossary/>
-          </Container>
+          <div>
+              <h2 className={"text-center"}>{i18n.t('title.glossary')}</h2>
+              <div className={"m-xl-5 mt-5 mt-xl-0 p-xl-5"}>
+                  <Glossary/>
+              </div>
+          </div>
       </>
   )
 }
