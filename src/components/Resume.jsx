@@ -47,7 +47,7 @@ export default function Resume({calculator}) {
                     <Col xs={12} sm={4}>{calculator.compare_to}</Col>
                 </Row>
                 <Alert variant={"info"} className={"mt-3"}>
-                    En prenant en compte un rendement moyen du {calculator.compare_to} est de {nFormatter(InvestTypes[calculator.compare_to])} % sur les 10 dernières années.
+                    En prenant en compte un rendement moyen du {calculator.compare_to} de {nFormatter(InvestTypes[calculator.compare_to])} % sur les 10 dernières années.
                 </Alert>
             </Card.Body>
         </Card>

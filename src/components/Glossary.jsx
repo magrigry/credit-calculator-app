@@ -70,6 +70,35 @@ export default function Glossary () {
                     offrant ainsi une diversification instantanée à moindre coût.
                 </Accordion.Body>
             </Accordion.Item>
+            <Accordion.Item eventKey="60">
+                <Accordion.Header>Taxes, impôts et frais</Accordion.Header>
+                <Accordion.Body>
+                    Lorsqu'on compare deux investissements en termes de rendement, il est crucial de prendre en compte les impôts et les frais pour évaluer le rendement net.
+                    En effet, le rendement brut ne reflète pas la véritable performance d'un investissement, car il ne tient pas compte des taxes et frais qui peuvent considérablement réduire les gains.
+                    <br/>
+                    <br/>
+                    Les impôts varient selon le type d'investissement et la fiscalité applicable, ce qui peut rendre un placement, a priori attractif, moins rentable après imposition.
+                    Ainsi, pour comparer objectivement deux investissements,
+                    il faut calculer le rendement net après impôts, qui seul donne une image fidèle du bénéfice réel que l'investisseur percevra.
+                </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="70">
+                <Accordion.Header>Rendement d'un bien immobilier</Accordion.Header>
+                <Accordion.Body>
+                    Pour calculer le rendement d'un bien immobilier, on utilise généralement le rendement locatif brut. Celui-ci se calcule en divisant le revenu locatif annuel
+                    (le loyer perçu sur une année) par le prix d'achat du bien, puis en multipliant par 100 pour obtenir un pourcentage. Par exemple, si un bien est acheté pour 200 000 €
+                    et que le loyer annuel est de 10 000 €, le rendement brut est de 5 % (10 000 € ÷ 200 000 € x 100).
+                    <br/>
+                    <br/>
+                    Ce rendement peut être affiné en prenant en compte les charges, les impôts, et autres frais, pour obtenir le rendement net, qui reflète mieux la rentabilité réelle de l'investissement.
+                    <br/>
+                    <br/>
+                    En plus de ce rendement locatif, il faut également considérer la possible appréciation du bien immobilier. Avec le temps,
+                    la valeur du bien peut augmenter, ce qui ajoute un gain en capital à la rentabilité de l'investissement.
+                    Le rendement global d'un bien immobilier prend donc en compte à la fois les revenus locatifs et la plus-value potentielle liée à
+                    l'augmentation de la valeur du bien.
+                </Accordion.Body>
+            </Accordion.Item>
         </Accordion>
     </>
 }

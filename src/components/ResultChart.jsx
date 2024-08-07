@@ -95,7 +95,7 @@ export default function ResultChart({calculator}) {
                 <Line hide={isHidden('y4')} name={i18n.t('chart.interest')} type="monotone" dataKey="y4" stroke="#FF314F" />
                 <CartesianGrid stroke="#ccc" />
                 <XAxis label={{ value: i18n.t('years'), angle: 0, position: 'top' }} dataKey="x" tick={<CustomizedXAxisTick />} />
-                <YAxis label={{ value: i18n.t('€') }}  tick={<CustomizedYAxisTick />} />
+                <YAxis domain={[0, Math.max(calculator.debt.amount, interest_cost, cash_flow, prev_credit, prev_invests)]} label={{ value: i18n.t('€') }}  tick={<CustomizedYAxisTick />} />
                 <Legend onClick={handleLegendClick} />
                 <Tooltip formatter={(value, name) => [nFormatter(value), name]} />
             </LineChart>

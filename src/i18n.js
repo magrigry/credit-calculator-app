@@ -28,7 +28,7 @@ const resources = {
             "years": "années",
             "Years": "Années",
             "compare.invest.with": "Comparer l'investissement avec : ",
-            "title.glossary": "Glossaire"
+            "title.glossary": "Glossaire & infos"
         }
     }
 };
