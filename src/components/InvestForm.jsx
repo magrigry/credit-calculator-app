@@ -2,6 +2,7 @@ import Form from "react-bootstrap/Form";
 import {useState} from "react";
 import {InvestTypes} from "../InvestTypes.js";
 import i18n from "i18next";
+import {Alert} from "react-bootstrap";
 
 export default function InvestForm({calculator, setCalculator}) {
 
@@ -21,6 +22,9 @@ export default function InvestForm({calculator, setCalculator}) {
                 )}
             </Form.Select>
         </Form.Group>
+        <Alert variant={"info"}>
+            Simule l'investissement en DCA avec un investissement mensuel dans l'indice sélectionné. La valeur mensuelle investie correspond à l'effort que nécessite le crédit.
+        </Alert>
     </>
 }
 

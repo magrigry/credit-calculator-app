@@ -2,6 +2,7 @@ import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XA
 import i18n from "../i18n.js";
 import {PureComponent, useState} from "react";
 import {nFormatter} from "../utils/Numbers.js";
+import {InvestTypes} from "../InvestTypes.js";
 class CustomizedYAxisTick extends PureComponent {
     render() {
         const { x, y, payload } = this.props;
@@ -51,7 +52,7 @@ export default function ResultChart({calculator}) {
     };
 
     let duration_in_month = calculator.debt.duration_in_y * 12;
-    let invest_yield = 0.09;
+    let invest_yield = InvestTypes[calculator.compare_to] / 100;
     let effort =  calculator.calculateEffort();
     let monthly_credit_cost = calculator.calculateMonthlyCreditCost();
 
