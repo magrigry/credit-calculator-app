@@ -1,10 +1,11 @@
-import {Card} from "react-bootstrap";
+import {Alert, Card, Col, Row} from "react-bootstrap";
 import i18n from "i18next";
 import {nFormatter} from "../utils/Numbers.js";
+import {InvestTypes} from "../enums/InvestTypes.js";
 
 export default function Resume({calculator}) {
     return <>
-        <Card  className="mx-5 mt-4">
+        <Card>
             <Card.Header>{i18n.t('resume')}</Card.Header>
             <Card.Body>
                 <p className="text-center">{i18n.t('credit.cost.is')}</p>
@@ -13,31 +14,41 @@ export default function Resume({calculator}) {
                 <p className="text-center">{i18n.t('effort.is')}</p>
                 <h1 className="text-center">{nFormatter(calculator.calculateEffort())} €</h1>
 
-                <p className="mt-5">
-                    <span>{i18n.t('credit.cost')} :</span>
-                    <span className="float-end">{nFormatter(calculator.calculateTotalInterestRateCost())} €</span>
-                </p>
+                <Row className="mt-5">
+                    <Col xs={12} sm={8} >{i18n.t('credit.cost')} :</Col>
+                    <Col xs={12} sm={4}>{nFormatter(calculator.calculateTotalInterestRateCost())} €</Col>
+                </Row>
 
                 <hr/>
 
-                <p >
-                    <span>{i18n.t('debt.amount')} :</span>
-                    <span className="float-end">{nFormatter(calculator.debt.amount)} €</span>
-                </p>
-                <p>
-                    <span>{i18n.t('credit.duration')} :</span>
-                    <span className="float-end">{nFormatter(calculator.debt.duration_in_y)} {i18n.t('years')}</span>
-                </p>
-                <p>
-                    <span>{i18n.t('credit.rate')} :</span>
-                    <span className="float-end">{nFormatter(calculator.debt.credit_rate)} %</span>
-                </p>
-                <p>
-                    <span>{i18n.t('credit.yield')} :</span>
-                    <span className="float-end">{nFormatter(calculator.debt.estimated_yield)} %</span>
-                </p>
-                <hr/>
+                <Row className="mt-5">
+                    <Col xs={12} sm={8} >{i18n.t('debt.amount')} :</Col>
+                    <Col xs={12} sm={4}>{nFormatter(calculator.debt.amount)} €</Col>
+                </Row>
 
+                <Row className="mt-5">
+                    <Col xs={12} sm={8} >{i18n.t('credit.duration')} :</Col>
+                    <Col xs={12} sm={4}>{nFormatter(calculator.debt.duration_in_y)} {i18n.t('years')}</Col>
+                </Row>
+
+                <Row className="mt-5">
+                    <Col xs={12} sm={8} >{i18n.t('credit.rate')} :</Col>
+                    <Col xs={12} sm={4}>{nFormatter(calculator.debt.credit_rate)} %</Col>
+                </Row>
+
+                <Row className="mt-5">
+                    <Col xs={12} sm={8} >{i18n.t('credit.yield')} :</Col>
+                    <Col xs={12} sm={4}>{nFormatter(calculator.debt.estimated_yield)} %</Col>
+                </Row>
+
+                <hr/>
+                <Row className="mt-5">
+                    <Col xs={12} sm={8} >{i18n.t('compare.invest.with')}</Col>
+                    <Col xs={12} sm={4}>{calculator.compare_to}</Col>
+                </Row>
+                <Alert variant={"info"} className={"mt-3"}>
+                    En prenant en compte un rendement moyen du {calculator.compare_to} est de {nFormatter(InvestTypes[calculator.compare_to])} % sur les 10 dernières années.
+                </Alert>
             </Card.Body>
         </Card>
     </>

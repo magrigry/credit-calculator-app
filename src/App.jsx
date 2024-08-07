@@ -18,7 +18,7 @@ function App() {
             credit_rate: 4,
             estimated_yield: 4,
       },
-      compare_to: InvestTypes.SP500,
+      compare_to: Object.keys(InvestTypes)[0],
 
       calculateMonthlyCreditCost: function () {
           let principal = this.debt.amount;
@@ -57,15 +57,15 @@ function App() {
           </div>
           <Container fluid>
               <Row className="justify-content-center mx-5">
-                  <Col>
+                  <Col lg={12} xxl={2}>
                       <CreditForm calculator={calculator} setCalculator={setCalculator}/>
                       <hr className="m-5"/>
                       <InvestForm calculator={calculator} setCalculator={setCalculator}/>
                   </Col>
-                  <Col lg={3}>
+                  <Col lg={12} xxl={3} className={"px-0 px-xxl-5 my-5 my-lg-0"}>
                     <Resume calculator={calculator}/>
                   </Col>
-                  <Col lg={6}>
+                  <Col lg={12} xxl={6}>
                       <ResultChart calculator={calculator}/>
                   </Col>
               </Row>
@@ -73,15 +73,9 @@ function App() {
 
           <hr className="m-5"/>
 
-          <Container fluid className={"m-5"}>
-              <Row>
-                  <Col>
-                      <h2>{i18n.t('title.glossary')}</h2>
-                      <Glossary />
-                  </Col>
-                  <Col></Col>
-                  <Col></Col>
-              </Row>
+          <Container className={"m-5"}>
+              <h2>{i18n.t('title.glossary')}</h2>
+              <Glossary/>
           </Container>
       </>
   )

@@ -23,6 +23,12 @@ const resources = {
             "credit.duration": "Durée du crédit",
             "credit.rate": "Taux d'intérêt du crédit",
             "credit.yield": "Rendement estimé de l'investissement",
+            "title": "Simulateur d'investissement par crédit",
+            "resume": "Résumé",
+            "years": "années",
+            "Years": "Années",
+            "compare.invest.with": "Comparer l'investissement avec : ",
+            "title.glossary": "Glossaire"
         }
     }
 };

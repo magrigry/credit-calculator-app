@@ -86,7 +86,7 @@ export default function ResultChart({calculator}) {
 
     return (
         <ResponsiveContainer width={"100%"} height={"100%"}>
-            <LineChart width={"100%"} height={"100%"} data={data}>
+            <LineChart width={"100%"} height={600} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <Line hide={isHidden('y1')} name={i18n.t('chart.capital.credit')} type="monotone" dataKey="y1" stroke="#8884d8" />
                 <Line hide={isHidden('y2')} name={i18n.t('chart.capital.invest')} type="monotone" dataKey="y2" stroke="#82ca9d" />
