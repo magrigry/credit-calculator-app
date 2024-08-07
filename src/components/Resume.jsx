@@ -21,28 +21,31 @@ export default function Resume({calculator}) {
 
                 <hr/>
 
-                <Row className="mt-5">
+                <Row >
                     <Col xs={12} sm={8} >{i18n.t('debt.amount')} :</Col>
                     <Col xs={12} sm={4}>{nFormatter(calculator.debt.amount)} €</Col>
                 </Row>
 
-                <Row className="mt-5">
+                <Row >
                     <Col xs={12} sm={8} >{i18n.t('credit.duration')} :</Col>
                     <Col xs={12} sm={4}>{nFormatter(calculator.debt.duration_in_y)} {i18n.t('years')}</Col>
                 </Row>
 
-                <Row className="mt-5">
+                <Row >
                     <Col xs={12} sm={8} >{i18n.t('credit.rate')} :</Col>
                     <Col xs={12} sm={4}>{nFormatter(calculator.debt.credit_rate)} %</Col>
                 </Row>
 
-                <Row className="mt-5">
+                <hr/>
+
+                <Row >
                     <Col xs={12} sm={8} >{i18n.t('credit.yield')} :</Col>
                     <Col xs={12} sm={4}>{nFormatter(calculator.debt.estimated_yield)} %</Col>
                 </Row>
 
                 <hr/>
-                <Row className="mt-5">
+
+                <Row >
                     <Col xs={12} sm={8} >{i18n.t('compare.invest.with')}</Col>
                     <Col xs={12} sm={4}>{calculator.compare_to}</Col>
                 </Row>

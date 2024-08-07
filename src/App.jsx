@@ -62,10 +62,10 @@ function App() {
                       <hr className="m-5"/>
                       <InvestForm calculator={calculator} setCalculator={setCalculator}/>
                   </Col>
-                  <Col lg={12} xxl={3} className={"px-0 px-xxl-5 my-5 my-lg-0"}>
+                  <Col lg={12} xxl={3} className={"px-0 ps-xxl-5 pe-xxl-3 mt-xxl-5 my-5 my-xxl-0 mt-4"}>
                     <Resume calculator={calculator}/>
                   </Col>
-                  <Col lg={12} xxl={6} className={"mt-5 mt-lg-5"} id={"chart-col"}>
+                  <Col lg={12} xxl={6} className={"mt-5 mt-lg-0"} id={"chart-col"}>
                       <ResultChart calculator={calculator}/>
                   </Col>
               </Row>
