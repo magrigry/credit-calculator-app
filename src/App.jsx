@@ -65,7 +65,7 @@ function App() {
                   <Col lg={12} xxl={3} className={"px-0 px-xxl-5 my-5 my-lg-0"}>
                     <Resume calculator={calculator}/>
                   </Col>
-                  <Col lg={12} xxl={6}>
+                  <Col lg={12} xxl={6} className={"mt-5 mt-lg-5"} id={"chart-col"}>
                       <ResultChart calculator={calculator}/>
                   </Col>
               </Row>
